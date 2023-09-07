@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <link rel="stylesheet" href="Fix-info-sida.css">
+    <title>Info sida</title>
+</head>
+<body>
+    <header>
+        <h1>Information om mig</h1>
+    </header>
+
+    <fieldset id="text">
+        <legend>Information</legend>
+        <div id="Information">
+            <p>
+                Det kan t.ex. handla om dina fritidsintressen eller var du bor. <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque velit voluptatum alias error rem sed sapiente doloremque culpa tempore? Quidem repellendus labore natus voluptatibus laborum nemo aliquid aspernatur! Consequuntur.
+            </p>
+        </div>  
+
+        <div class="Lista">
+            <h2>Lista på saker jag gjort i sommar</h2>
+            <ul>
+                <li>Croatsien</li>
+                <li>MAT</li>
+                <li>Solat</li>
+            </ul>
+        </div>
+    </fieldset>
+
+    <form action="mailto:lina.barthelson@gmail.com"         method="post" enctype="text/plain" id="formen">
+        <div>
+            <fieldset id="kontakt">
+
+                <legend>Avsändare</legend>
+                <br>
+                <label for="fnamn">Förnamn: <span>*</span></label> <br>
+                <input type="text" name="Förnamn" id="fnamn" maxlength="10" placeholder="Ditt förnamn" required/> <br>
+
+                <label for="enamn">Efternamn: <span>*</span></label> <br>
+                <input type="text" name="Efternamn" id="efnamn" maxlength="15" placeholder="Ditt efternamn" required/> <br>
+
+                <label for="epost">E-post: <span>*</span></label> <br>
+                <input pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" type="text"  name="epost" 
+                id="epost" placeholder="namn@adress.com" required />
+                        
+                <br><br>
+
+                <!--Sänd-knappen som både kan spara och skicka formuläret-->
+                <input  type="submit" id="button1" value="Send"/> 
+                <br><br>
+
+            </fieldset>
+        </div> 
+    </form>  
+</body>
+</html>

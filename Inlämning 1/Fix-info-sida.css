@@ -1,0 +1,27 @@
+body{
+    background-image: url(Bilder/gotland.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+}
+
+header{
+    text-align: center;
+}
+
+#Information{
+    margin: 10px;
+}
+
+/* .Lista{
+    
+}
+ */
+span{
+    color: red;
+}
+
+fieldset{
+    background-color:rgba(190, 190, 190, 0.552);
+    border: solid black 1px;
+}
