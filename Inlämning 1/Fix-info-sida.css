@@ -9,6 +9,32 @@ header{
     text-align: center;
 }
 
+/* Taget från https://www.w3schools.com/css/css_navbar_horizontal.asp */
+#Meny{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.Meny-Link{
+    float: left;
+}
+  
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+li a:hover{
+    background-color: #111;
+}
+
 #Information{
     margin: 10px;
 }
@@ -24,4 +50,15 @@ span{
 fieldset{
     background-color:rgba(190, 190, 190, 0.552);
     border: solid black 1px;
+}
+input,select{
+    width: 15%;
+    padding: 5px;
+}
+
+input[type=text]:focus {
+    width: 15%;
+    padding: 5px;
+    background-color:rgb(157, 187, 242);
+    border: 3px solid #555;
 }

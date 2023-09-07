@@ -9,6 +9,12 @@
 </head>
 <body>
     <header>
+        <ul id="Meny">
+            <li class="Meny-Link"><a href="default.asp">Home</a></li>
+            <li class="Meny-Link" ><a href="news.asp">News</a></li>
+            <li class="Meny-Link"><a href="contact.asp">Contact</a></li>
+            <li class="Meny-Link"><a href="about.asp">About</a></li>
+          </ul>
         <h1>Information om mig</h1>
     </header>
 
@@ -31,7 +37,7 @@
         </div>
     </fieldset>
 
-    <form action="mailto:lina.barthelson@gmail.com" method="post" enctype="text/plain" id="formen">
+    <form action="mailto:lina.barthelson@gmail.com" method="post" enctype="text/plain"id="formen">
         <div>
             <fieldset id="kontakt">
 
@@ -45,12 +51,24 @@
 
                 <label for="epost">E-post: <span>*</span></label> <br>
                 <input pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" type="text"  name="epost" 
-                id="epost" placeholder="namn@adress.com" required />
+                id="epost" placeholder="namn@adress.com" required /> <br>
+
+                <label for="Födelsedag">Födelsedag:<span>*</span></label><br>
+                <input type="date" id="Födelsedag" name="Födelsedag"  required><br>
+
+            
+                <label for="Identitet">Jag identifierar mig som:</label><br>
+                <select id="Identitet" name="Identitet">
+                    <option value="Kvinna">Kvinna</option>
+                    <option value="Man">Man</option>
+                    <option value="Hen">Hen</option>
+                    <option value="Annat">Annat</option>
+                </select>
                         
                 <br><br>
 
                 <!--Sänd-knappen som både kan spara och skicka formuläret-->
-                <input  type="submit" id="button1" value="Send"/> 
+                <input  type="submit" id="button1" value="Skicka"/> 
                 <br><br>
 
             </fieldset>
