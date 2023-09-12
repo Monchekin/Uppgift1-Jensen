@@ -8,10 +8,9 @@ body{
     display: grid;
     grid-template-columns: 23% 50% 27%;
     grid-template-areas:
-        "header header header"
-        "left main right"
-        "footer footer footer";
-    
+    "header header header"
+    "left main right"
+    "footer footer footer";
 }
 
 
@@ -21,7 +20,7 @@ body{
     text-align: center;
 }
 
-#Meny{
+.Meny{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -46,14 +45,13 @@ li a:hover{
 }
   
 
-/* Mainspalten */
+/* Mainspalten  på infosidan*/
 .main{
     grid-area: main;
-   
 }
 
 
-/* Högerspalten */
+/* Högerspalten  på infosidan */
 .right{
     grid-area: right;
     
@@ -68,11 +66,41 @@ fieldset{
     margin: 10px;
 }
 
+
+/* Vänsterspalten  på infosidan */
 .left{
     grid-area: left;
 }
 
+
 /* Css av Kontaktsidan */
+.K-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+        "header header"
+        "left main"
+        "footer footer";
+}
+
+.K-left{
+    grid-area: left;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.K-main{
+    grid-area: main;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#formen{
+    text-align: center; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+}
+
 input,select{
     width: 15%;
     padding: 5px;
@@ -87,5 +115,4 @@ input[type=text]:focus {
 
 span{
     color: red;
-    
 }
