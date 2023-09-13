@@ -86,55 +86,18 @@ fieldset{
     
 }
 
-img{
+.pic{
     height: 200px; 
     transition: font-size 1s;
     border: 5px solid black;
 }
 
-img:hover:hover {
+.pic:hover:hover {
     border: 5px solid red;
     width: 200px;
     height: 300px;
     font-size: 48px;
 }
-
-
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
 
 /* Vänsterspalten  på infosidan */
 .left{
@@ -142,7 +105,7 @@ div.desc {
 }
 
 
-/* Css av Kontaktsidan */
+/* Css av Kontakt-sidan */
 .K-container{
     display: grid;
     grid-template-columns: 40% 60%;
@@ -184,6 +147,11 @@ input[type=text]:focus {
 
 span{
     color: red;
+}
+
+/* CSS på Nyheter-sidan */
+#news{
+  margin: 20% 50%;
 }
 
 /* footer */
