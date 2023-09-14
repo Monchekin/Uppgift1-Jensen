@@ -1,0 +1,45 @@
+
+
+/* Css av Kontakt-sidan */
+.K-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+        "header header"
+        "left main"
+        "footer footer";
+}
+
+.K-left{
+    grid-area: left;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.K-main{
+    grid-area: main;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#formen{
+    text-align: center; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+}
+
+input,select{
+    width: 15%;
+    padding: 5px;
+}
+
+input[type=text]:focus {
+    width: 15%;
+    padding: 5px;
+    background-color:rgb(157, 187, 242);
+    border: 3px solid #555;
+}
+
+span{
+    color: red;
+}
