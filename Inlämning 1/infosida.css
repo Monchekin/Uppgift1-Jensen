@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 25% 25% 25%; 
-    grid-template-rows: 30%;
+    grid-template-rows: 35% 50% 60% ;
     grid-template-areas: 
       ". header header " 
       ". main right"
@@ -27,6 +27,7 @@
       
     .meny-link{
         float: left;
+        font-weight: bold;
     }
     
     li a{
@@ -39,7 +40,9 @@
       
     li a:hover{
         background-color: #797979;
+        transform: scale(1.2);
     } 
+
     h1{
         margin-top: 15vh;
         text-align: center;
@@ -56,12 +59,10 @@
         
     }
 
-   
-/* 
-    #Information{
-        margin: 10px;
+    #information{
         height: 29vh;
-       */
+    }
+   
 
     fieldset{
         background-color:rgba(190, 190, 190, 0.552);
@@ -76,33 +77,35 @@
         grid-area: right;
         
     }
-
+    
+    .lista{
+        height: 28.5vh;
+    }
 
 
 
     .under-div {
         grid-area: under-div;
-        height: 210px;
-        /* justify-self: center; */
-        width: auto;
+        height: 310px;    
         display: block;
         pointer-events: none;
-
+       
     }
     
     .pic{
-        height: 200px; 
+        height: 155px; 
         transition: font-size 1s;
         border: 5px solid black;
         pointer-events: auto;
+        position: float;
+        transition: transform 1s ease-out;        
     }
     
+  
     .pic:hover {
-        width: 200px;
-        height: 250px;
-       /*  font-size: 48px; */
-/*         transform: translate(-25%, -25%) scale(1);
- */    }
+        transform: scale(2);
+        
+   }
     
     .under-div:hover {
         height: 310px;
@@ -112,8 +115,9 @@
     .footer{
         grid-area: footer;
         height: 10vh;
-        
+        align-items: end;
         border: 1px solid;
-        position: relative;
-        top: 50vh;
+       
+    
+        top: 50vh; 
     }
