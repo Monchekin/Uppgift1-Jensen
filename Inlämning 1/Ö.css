@@ -5,12 +5,58 @@ body{
 }
 
 
+.header{
+    grid-area: header;
+    justify-self: center;
+    height: 8vh;;
+}
 
+.meny{
+    list-style-type: none;
+    margin-top: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+  
+.meny-link{
+    float: left;
+    font-weight: bold;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover{
+    background-color: #797979;
+    transform: scale(1.2);
+} 
+
+h1{
+    margin-top: 15vh;
+    text-align: center;
+    color:rgb(12, 12, 12);
+}
+
+fieldset{
+    background-color:rgba(190, 190, 190, 0.552);
+    border: solid black 1px;
+}
 
 
 
 /* footer */
+
 .footer{
     grid-area: footer;
-    border: 5px solid red;
+    height: 10vh;
+  
+    border: 1px solid red;
+    display: block;
+
+    
 }

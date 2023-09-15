@@ -3,71 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/A3EFB24E9B.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Ö.css">
     <link rel="stylesheet" href="fuckupside.css">
-    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/blood-moon-2" rel="stylesheet">
+    <title>Kontakt sida</title>
 </head>
 <body>
-    <div class="container">
+    
+    <div class="K-container">
         <div class="header"> 
-            <div class="header">
-                <ul class="meny">
-                    <li class="meny-link"><a href="index.html">Hem</a></li>
-                    <li class="meny-link"><a href="Kontakt.html">Kontakt</a></li>
-                    <li class="meny-link"><a href="Nyheter.html">Nyheter</a></li>
-                </ul>
-                <h1>Information om mig</h1>
+            
+            <ul class="meny">
+                <li class="meny-link"><a href="index.html">Hem</a></li>
+                <li class="meny-link"><a href="Infosida.html">Information</a></li>
+                <li class="meny-link"><a href="Nyheter.html">Nyheter</a></li>
+            </ul>
+            <h1>Information om dig</h1>
+
+        </div>     
+
+        <div class="K-left">
+        
+            <p class="citat">IT is all about you</p>
+            <img class="pointer" src="Bilder/it-s-all-about-you.jpg" alt="">
+            
+        </div>
+
+        <div class="K-main">
+            <form action="mailto:lina.barthelson@gmail.com" method="post" enctype="text/plain"id="formen">
+                
+                <fieldset id="kontakt">
+
+                    <legend>Om dig:</legend>
+                    <br>
+                    <label for="fnamn">Förnamn: <span>*</span></label> <br>
+                    <input type="text" name="Förnamn" id="fnamn" maxlength="10" placeholder="Ditt förnamn" required/> <br>
+
+                    <label for="enamn">Efternamn: <span>*</span></label> <br>
+                    <input type="text" name="Efternamn" id="efnamn" maxlength="15" placeholder="Ditt efternamn" required/> <br>
+
+                    <label for="epost">E-post: <span>*</span></label> <br>
+                    <input pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" type="text"  name="epost" 
+                    id="epost" placeholder="namn@adress.com" required /> <br>
+
+                    <label for="Födelsedag">Födelsedag:<span>*</span></label><br>
+                    <input type="date" id="Födelsedag" name="Födelsedag"  required><br>
+
+                
+                    <label for="Identitet">Jag identifierar mig som:</label><br>
+                    <select id="Identitet" name="Identitet">
+                        <option value="Kvinna">Kvinna</option>
+                        <option value="Man">Man</option>
+                        <option value="Hen">Hen</option>
+                        <option value="Annat">Annat</option>
+                    </select>
+                            
+                    <br><br>
+
+                    <!--Sänd-knappen som både kan spara och skicka formuläret-->
+                    <input  type="submit" id="button1" value="Skicka"/> 
+                    <br><br>
+
+                </fieldset>
+        
+            </form>  
+
+            <div class="footer">
+                <jag class="fa-brands fa-facebook fa-2xl"></jag>
+                <jag class = "fa-brands fa-square-facebook" style = "color: #0137c3;"></jag>
+                <jag class = "fa-brands fa-square-twitter" style = "color: #2ca9e0;"></jag>
+                <jag class = "fa-brands fa-square-instagram" style = "color: #b16b6b;"></jag>
             </div>
+    
         </div>
-
-        <div class="main">
-   
-
-            <fieldset id="text">
-                <legend>Information</legend>
-                <div id="information">
-                    <p>
-                        Hej,
-                        Jag heter Lina, och jag har precis börjat en ny utbildning inom IT. Utbildningen heter Frontendutvecklare med inriktning webbsäkerhet. Innan jag valde att börja på denna utbildning och byta riktning i livet, jobbade jag som personlig assistent inom Nacka Kommun i 11 år. Men har pluggat lite programering innan samt tillgänglighet på webben och i appar.
-                    </p>
-                </div>
-            </fieldset>
-        </div>
-
-        <div class="right">  <fieldset>
-                <legend>Lista</legend>
-                <div class="lista">
-                    <h2>Lista på saker jag gjort i sommmar:</h2>
-                    <ul>
-                        <li>Varit på landet</li>
-                        <li>Klippt av mitt lång hår</li>
-                        <li>Varit på Taxinge Slott</li>
-                        <li>Varit på Gotland</li>
-                        <li>Varit i Croatsien</li>
-                        <li>Varit i Skogen och plockat kantareller</li>
-                    </ul>
-                </div>
-            </fieldset>
-        </div>
-
-        <div class="under-div">
-            <div class="bilder">
-                    <img class="pic"src="Bilder/Landet.jpg" alt="Hem odlad potatis i jorden">
-                    <img class="pic"src="Bilder/Hår.jpg" alt="Linas avklippta hår i en fälta">
-                    <img class="pic"src="Bilder/Taxinge-slott.jpg" alt="Bild på bakelser">
-                    <img class="pic"src="Bilder/Gotland.jpg" alt="Bil på Hamera Krog på Gotland">
-                    <img class="pic"src="Bilder/Croatsien.jpg" alt="Bild på gamalt hur i Croatsien">
-                    <img class="pic"src="Bilder/Kantareller.jpg" alt="En korg med Kantareller">
-            </div>  
-        </div>
-
-        <div class="footer">
-            <jag class="fa-brands fa-facebook fa-2xl"></jag>
-            <jag class = "fa-brands fa-square-facebook" style = "color: #0137c3;"></jag>
-            <jag class = "fa-brands fa-square-twitter" style = "color: #2ca9e0;"></jag>
-            <jag class = "fa-brands fa-square-instagram" style = "color: #b16b6b;"></jag>
-        </div>
-
     </div>
 </body>
 </html>
