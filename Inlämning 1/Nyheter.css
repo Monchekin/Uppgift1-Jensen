@@ -1,7 +1,7 @@
 /* CSS på Nyheter-sidan */
 .N-container{
   display: grid;
-  grid-template-columns: 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 35% 90% 60%;
   grid-template-areas:
       ". header header"
@@ -11,6 +11,6 @@
 }
 
 
-.N-main{
+/* .N-main{
   grid-area: main;
-}
+} */

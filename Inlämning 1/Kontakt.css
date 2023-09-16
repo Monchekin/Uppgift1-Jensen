@@ -1,8 +1,8 @@
 /* Css av Kontakt-sidan */
 .K-container{
     display: grid;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 50% 50% 60%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 45% 50% 60%;
     grid-template-areas:
         ". header header"
         ". left main"

@@ -1,15 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/golden-age-restored');
 
-@media screen and (max-width:768px){
-    .header{
-        
-    }
-}
+
 
 body{
-    background-image: url(Bilder/svartramm.png);
+    background-image: url(Bilder/svart.png);
     background-repeat: no-repeat;
     background-size:cover;
+    height: 100vh;
+}
+
+.main, .N-main{
+    grid-area: main;
 }
 
 .header{
@@ -58,21 +59,15 @@ fieldset{
 
 
 /* footer */
-
 .footer{
     grid-area: footer;
-    height: 10vh;
-    border: 2px solid red; 
-    position: absolute; 
+    height: 10vh; 
+    position:relative; 
     bottom: 0;
-    width: 100%;
-    background-color: #000000;
+    width: 50vw;
+    background-color:rgba(190, 190, 190, 0.552);
     display: flex;
     justify-content: center; 
     align-items: center;
   
-}
-
-.sociala{
-    padding: 2px;
-}
+} 

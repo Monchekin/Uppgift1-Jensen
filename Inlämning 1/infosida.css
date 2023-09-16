@@ -1,8 +1,8 @@
 /* Css av Info-sidan */
 .container{
     display: grid;
-    grid-template-columns: 25% 25% 27%; 
-    grid-template-rows: 35% 50% 60%;
+    grid-template-columns: 25% 25% 27% 23%; 
+    grid-template-rows: 30% 50% 60%;
     grid-template-areas: 
       ". header header" 
       ". main right"
@@ -10,12 +10,14 @@
       "footer footer . ";
     }
 
-    .main{
+   /*  .main{
         grid-area: main;
-    }
+    } */
 
     #information{
-        height: 29vh;
+        height: 32vh;
+        overflow: auto;
+        
     }
    
 
@@ -25,7 +27,8 @@
     }
     
     .lista{
-        height: 28.5vh;
+        height: 32vh;
+        overflow: auto;
     }
 
     .under-div {
