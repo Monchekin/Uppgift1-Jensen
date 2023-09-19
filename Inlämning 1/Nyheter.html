@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .news {
+        background-image: url(Bilder/News.png);
+        background-size: contain;
+    }
+    </style>
+
     <script src="https://kit.fontawesome.com/A3EFB24E9B.js" crossorigin="anonymous"></script>
     <link rel="icon" href="Bilder/Lina.png" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="Ö.css">
@@ -10,9 +17,12 @@
     <link rel="stylesheet" href="fuckupside.css">
     <title>Nyheter</title>
 </head>
-<body>
+<body class="news">
     <div class="N-container">
+
         <nav class="header"> 
+            <input type="checkbox" id="menu">
+            <label for="menu" class="menu-icon">&#9776;</label>
             
             <ul class="meny">
                 <li class="meny-link"><a href="index.html">Hem</a></li>
@@ -24,9 +34,7 @@
 
         </nav>        
                
-        <div class="N-main">
-            <img id="news" src="Bilder/News.png" alt="">
-        </div> 
+        
 
         <div class="footer">
             <a href="https://sv-se.facebook.com/" target="_blank">
