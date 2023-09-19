@@ -1,0 +1,105 @@
+@media screen and (min-width:375px){
+    body{
+        background-image: url(Bilder/svart.png);
+        
+        background-image: none;
+       
+    }
+    .header{
+        .meny{ 
+            display: none;
+            
+        }
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 10% 10% 30% 30% 10% 10%; 
+        grid-template-rows: 20% 45% 45% 15%;
+        grid-template-areas: 
+          ". header header" 
+          ". main right"
+          ". under-div under-div"
+          "footer footer . ";
+          align-items: center;
+    }
+
+    .main{
+        grid-column: 3/5;  
+        display: block;
+    }
+    .right{
+        grid-column: 3/5;
+        
+    }
+    .under-div{
+       justify-self: center;
+    }
+
+
+
+    .K-left{
+        grid-column: 3/5;
+    }
+
+    .pointer{
+        display: none;
+    }
+
+    .K-main{
+        grid-column: 3/5;
+    }
+
+    .input,select{
+        width: 40vw;
+        padding: 5px;
+    }
+    
+    input[type=text]:focus {
+        width: 40vw;
+        padding: 5px;
+        background-color:rgb(157, 187, 242);
+        border: 3px solid #555;
+    }
+
+}
+
+
+@media screen and (max-width:767px){
+    .main{
+        grid-column: 3/5;
+        display: block;
+    }
+    .right{
+        grid-column: 3/5;
+        display: block;
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    
+}
+
+
+@media screen and (min-width:1200px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

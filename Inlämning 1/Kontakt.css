@@ -1,17 +1,20 @@
 /* Css av Kontakt-sidan */
 .K-container{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 45% 50% 60%;
+    grid-template-columns: 10% 10% 30% 30% 10% 10%; 
+    grid-template-rows: 20% 70% 4% 10%;
     grid-template-areas:
         ". header header"
         ". left main"
-        "footer footer .";    
+        "footer footer .";  
+        align-items: center;  
 }
 
 .K-left{
     grid-area: left;
-    padding-top: 1vw ;
+    padding-top: 1vw;
+    grid-row: 2/2;
+    grid-column: 3/3;
 }
 
 .citat{
@@ -30,7 +33,8 @@
 
 .K-main{
     grid-area: main;  
-    padding-left: 20px;
+    grid-row: 2/2;
+    grid-column: 4/4;
 }
 
 input,select{
