@@ -1,20 +1,33 @@
-@media screen and (max-width:475px){
+
+@media screen and (max-width:320px){
+   body{
+    background-image: none;
+   }
+
+   .h1{
+        grid-column: 2/6;
+        grid-row: 2/2;
+        font-size: small;
+    }
+
+   /* Menyn */
     .menu-icon {
         display: block;
+        font-size: 3rem;
     }
 
     .header {
         flex-direction: column;
-        position: fixed;
-        top:0;
-        margin-left: 50vh;
-        width: 100%; 
-        z-index: 2;
+        position: absolute;
+        top: 2vh;
+       /*  margin-left: 50vh; */
+        width: 50%; 
+        /* z-index: 2; */
     }
 
     .meny {
         display: none;
-        list-style-type: none;
+      
     }
 
     input[type="checkbox"]:checked + .menu-icon + .meny {
@@ -23,71 +36,57 @@
     }
 
     .meny-link{
-        width: 1rem;
-       /*  text-align: left; */
+       /*  width: 3rem; */
+        font-size: 15px;
+        list-style: none;
     }
 
-
-    .N-container{
-        display: grid;
-        grid-template-columns: 10% 10% 30% 30% 10% 10%; 
-        grid-template-rows: 15vh 20vh 25vh 20vh 15vh ;
-        grid-template-areas:
-            ". header header"
-            ". main main"
-            "footer footer .";
-            align-items: center;
-        }
-    
-    
-
-
-
-
-
-
-
-
-
+    /* Inforamtion-sidan */
     .container{
     display: grid;
-    grid-template-columns: 10% 10% 30% 30% 10% 10%; 
-    grid-template-rows: 5% 30% 25% 42% 5%;
+    grid-template-columns: auto;
+    grid-template-rows: 5vh 20vh 50vh 40vh 65vh;
     grid-template-areas: 
         ". header header" 
-        ". main right"
+        ". h1 h1"
+        ". main main"
+        ". right right"
         ". under-div under-div"
         "footer footer . ";
         align-items: center;
     }
 
     .main{
-        grid-column: 3/5;  
-        display: block;
+        
+        grid-row: 3/3;
     }
     .right{
-        grid-column: 3/5;
-        grid-row: 3/3;
+        
+        grid-row: 4/4;
         
     }
     .under-div{
-        grid-row: 4/4;
+        grid-row: 5/5;
+        grid-column: 2/6;
     }
 
-
+    /* Kontakt-sidan */
     .K-container{
     display: grid;
     grid-template-columns: 10% 10% 30% 30% 10% 10%; 
-    grid-template-rows: 5% 20% 55% 1% 10%;
+    grid-template-rows: 10vh 10vh 10vh 45vh 10vh 15vh ;
     grid-template-areas:
         ". header header"
-        ". left main"
-        "footer footer .";  
-        align-items: center;  
+        ". h1 h1"
+        ". main main"
+        "footer footer .";
+        align-items: center;
     }
 
     .K-left{
         grid-column: 3/5;
+        grid-row: 3/3
+        
     }
 
     .pointer{
@@ -96,7 +95,7 @@
 
     .K-main{
         grid-column: 3/5;
-        grid-row: 3/3 ;
+        grid-row: 4/4 ;
     }
 
     input,select{
@@ -111,25 +110,59 @@
         border: 3px solid #555;
     }
 
-
-
+    /* Nyheter-sidan */
+    .N-container{
+    display: grid;
+    grid-template-columns: 10% 10% 30% 30% 10% 10%; 
+    grid-template-rows: 15vh 20vh 25vh 10vh 15vh ;
+    grid-template-areas:
+        ". header header"
+        ". main main"
+        "footer footer .";
+        align-items: center;
+    }
+        
+    /* Footern */
     .footer{
-        grid-row: 5/5;
+        grid-row: 6/6;
+        
     }
+
 }
 
-/* 
-@media screen and (max-width:767px){
+
+@media screen and (max-width:768px){
+    
+    .container{
+    display: grid;
+    grid-template-columns: 10% 10% 30% 30% 10% 10%; 
+    grid-template-rows:  17vh 20vh 65vh 40vh 40vh;
+    grid-template-areas: 
+        ". header header" 
+        ". h1 h1"
+        ". main right"
+        ". under-div under-div"
+        "footer footer . ";
+        align-items: center;
+    }
+    
     .main{
-        grid-column: 3/5;
-        display: block;
+        grid-column: 2/4;
+       
     }
+
     .right{
+        grid-column: 4/6;
+        grid-row: 3/4;
+        
+    }
+
+    .under-div{
         grid-column: 3/5;
-        display: block;
+        grid-row: 4/5;
     }
 }
-
+/* 
 
 @media screen and (min-width:1024px){
     
@@ -139,8 +172,7 @@
 @media screen and (min-width:1200px){
     
 }
-
- */
+*/
 
 
 

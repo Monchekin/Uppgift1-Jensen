@@ -52,12 +52,16 @@
     transform: translate(-50%, -50%) scale(1.6);
   }
 
+  #footer{
+    justify-content:  space-evenly;
+  }
+
   /* Länkar till sociala sidor */
   .link{
     position: fixed;
-    bottom: 10%;
-    left: 46%;
-    margin: auto auto;
+    bottom: 20vh;
+    left: 10.5rem;
+   
     height: 50px;
     text-align: center;
     padding: 5px;
