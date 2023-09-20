@@ -1,37 +1,30 @@
 @import url('https://fonts.cdnfonts.com/css/golden-age-restored');
 
 body{
-    background-image: url(Bilder/svart.png);
+    /* background-image: url(Bilder/svart.png); */
     background-repeat: no-repeat;
     background-size:cover;
     background-size: cover;
             background-position: center;
             height: 100vh;
-           /*  display: flex; */
-           /*  justify-content: center; */
-          /*   align-items: center; */
-    /* height: 100vh; */
-    /* display: flex;
-    flex-direction: column; */
+       
 }
 
-   /* Stil för hamburgarmeny-ikonen */
-   .menu-icon {
-    font-size: 4rem;
+/* Stil för hamburgarmeny-ikonen */
+.menu-icon {
+    font-size: 2rem;
     cursor: pointer;
     display: none;
 }
+  
 /* Stil för hamburgarmenyen när den är aktiv */
 input[type="checkbox"] {
     display: none;
 }
-
-/* input[type="checkbox"]:checked + .menu-icon + .nav-links {
+  
+input[type="checkbox"]:checked + .menu-icon + .nav-links {
     flex-direction: column;
-    background-color: #333; */
-
-
-
+}
 
 .header{
     grid-area: header;
@@ -67,10 +60,12 @@ li a:hover{
 } 
 
 .h1{
+    grid-area: h1;
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: black;
-    
+    grid-column: 3/5;
+
 }
 
 fieldset{
@@ -83,14 +78,12 @@ fieldset{
 /* footer */
 .footer{
     grid-area: footer;
-    grid-row: 4/4;
+    grid-row: 6/6;
     grid-column:3/5;
     height: 10vh; 
     position:relative; 
-    
     justify-content: center; 
     align-items: center;
     gap: 10px;
     display: flex;
-
 } 
