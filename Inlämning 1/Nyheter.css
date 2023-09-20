@@ -2,19 +2,12 @@
 .N-container{
   display: grid;
   grid-template-columns: 10% 10% 30% 30% 10% 10%; 
-  grid-template-rows: 20% 200% 150% 20%;
+  grid-template-rows: 30% 150% 200%;
   grid-template-areas:
       ". header header"
-      ". main main"
       "footer footer .";
       align-items: center;
       
-}
-
-.N-main{
-  grid-area: main;
-  grid-row: 3/3;
-  grid-column: 3/5;
 }
 
 

@@ -2,7 +2,7 @@
 .K-container{
     display: grid;
     grid-template-columns: 10% 10% 30% 30% 10% 10%; 
-    grid-template-rows: 20% 70% 4% 10%;
+    grid-template-rows: 15% 80% 5%;
     grid-template-areas:
         ". header header"
         ". left main"
@@ -38,12 +38,12 @@
 }
 
 input,select{
-    width: 20vw;
+    width: 90%;
     padding: 5px;
 }
 
 input[type=text]:focus {
-    width: 20vw;
+    width: 90%;
     padding: 5px;
     background-color:rgb(157, 187, 242);
     border: 3px solid #555;
