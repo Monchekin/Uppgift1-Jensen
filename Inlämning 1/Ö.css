@@ -12,7 +12,6 @@ body{
 /* Hamburgarmeny */
 .menu-icon {
     font-size: 2rem;
-    cursor: pointer;
     display: none;
 }
   
@@ -26,20 +25,19 @@ input[type="checkbox"]:checked + .menu-icon + .nav-links {
 
 .meny{
     list-style-type: none;
-    overflow: hidden;
-    background-color: #000000;
+    overflow: hidden;   
 }
   
 .meny-link{
     float: left;
     font-weight: bold;
+    border: red 2px solid;
 }
 
 li a{
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    color: black;
+    padding: 14px;
     text-decoration: none;
     font-family: 'Golden Age Restored', sans-serif;
 }
@@ -48,6 +46,10 @@ li a:hover{
     background-color: #797979;
     transform: scale(1.2);
 } 
+
+.active{
+    background-color: #797979;
+}
 
 .header{
     grid-area: header;

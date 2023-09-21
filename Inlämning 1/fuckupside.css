@@ -67,11 +67,20 @@
 
     .meny {
         display: none;
+        background-color: black;
     }
 
     input[type="checkbox"]:checked + .menu-icon + .meny {
         display:grid;
     }
+
+    li a{
+        color: white;
+    }
+
+    li a:hover{
+        transform: none;
+    } 
 
     .meny-link{
         font-size: 15px;

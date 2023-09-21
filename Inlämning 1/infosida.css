@@ -28,7 +28,7 @@ h1{
 
 .main, .right{
     grid-row: 3/3;
-    height: 80%;
+    height: 100%;
     align-self: stretch;
     border: solid black 1px;
     background-color:rgba(190, 190, 190, 0.801);
