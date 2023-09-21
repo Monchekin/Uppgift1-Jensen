@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://kit.fontawesome.com/A3EFB24E9B.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="infosida.css">
+
     <link rel="stylesheet" href="Ö.css">
+    <link rel="stylesheet" href="infosida.css">
     <link rel="stylesheet" href="fuckupside.css">
+
     <link rel="icon" href="Bilder/Lina.png" type="image/vnd.microsoft.icon" />
-    <title>Info Sida</title>
+
+    <title>Information-Sidan</title>
 </head>
 <body>
     <div class="container">
         <nav class="header"> 
-
+            <!-- Hamburgar-meny för små enheter-->
             <input type="checkbox" id="menu">
             <label for="menu" class="menu-icon">&#9776;</label>
             
+            <!-- Meny för stora enheter -->
             <ul class="meny">
                 <li class="meny-link"><a href="index.html">Hem</a></li>
                 <li class="meny-link"><a href="Infosida.html">Information</a></li>
                 <li class="meny-link"><a href="Kontakt.html">Kontakt</a></li>
                 <li class="meny-link"><a href="Nyheter.html">Nyheter</a></li>
             </ul>
-            
-
         </nav>        
             
-        <div class="h1">
-            <h1>Information om mig</h1>
-        </div>
-      
-
+        <!-- Gjorde en div här för att grid här uppbyggd av divar -->
+       
+        <h1>Information om mig</h1>
+       
+        <!-- Information om mig -->
         <div class="main">
-   
-           
+            
             <fieldset id="text">
-                <legend>Information</legend>
+                <h2>Information</h2>
                 <div id="information">
                     <p>
                         Hej, <br>
@@ -46,8 +48,11 @@
             </fieldset>
         </div>
 
-        <div class="right">  <fieldset>
-                <legend>Lista</legend>
+        <!-- Listan -->
+        <div class="right">  
+            
+            <fieldset>
+                <h2>Lista</h2>
                 <div class="lista">
                     <h3>Lista på saker jag gjort i sommmar:</h3>
                     <ul>
@@ -56,26 +61,31 @@
                         <li>Varit på Taxinge Slott</li>
                         <li>Varit på Gotland</li>
                         <li>Varit i Croatsien</li>
-                        <li>Varit i Skogen och plockat kantareller</li>
-                        
+                        <li>Varit i Skogen och plockat kantareller</li> 
                     </ul>
                 </div>
             </fieldset>
         </div>
 
+        <!-- Bilder -->
         <div class="under-div"> 
             <div class="bilder">
-            <!--Bilderna ligger i <a> -tag för att man ska kunna få fokus på dem om man vill tabba sig igenom sidan-->
-                    <a href="#"><img class="pic" src="Bilder/Landet.jpg" alt="Hem odlad potatis i jorden"></a>
-                    <a href="#"><img class="pic" src="Bilder/Hår.jpg" alt="Linas avklippta hår i en fälta"></a>
-                    <a href="#"><img class="pic" src="Bilder/Taxinge-slott.jpg" alt="Bild på bakelser"></a>
-                    <a href="#"><img class="pic" src="Bilder/Gotland.jpg" alt="Bil på Hamera Krog på Gotland"></a>
-                    <a href="#"><img class="pic" src="Bilder/Croatsien.jpg" alt="Bild på gamalt hur i Croatsien"></a>
-                    <a href="#"><img class="pic" src="Bilder/Kantareller.jpg" alt="En korg med Kantareller"></a>
+                <!--Bilderna ligger i <a> -tag för att man ska kunna få fokus på dem om man vill tabba sig igenom sidan-->
+                <a href="#"><img class="pic" src="Bilder/Landet.jpg" alt="Hem odlad potatis i jorden"></a>
+
+                <a href="#"><img class="pic" src="Bilder/Hår.jpg" alt="Linas avklippta hår i en fälta"></a>
+
+                <a href="#"><img class="pic" src="Bilder/Taxinge-slott.jpg" alt="Bild på bakelser"></a>
+
+                <a href="#"><img class="pic" src="Bilder/Gotland.jpg" alt="Bil på Hamera Krog på Gotland"></a>
+
+                <a href="#"><img class="pic" src="Bilder/Croatsien.jpg" alt="Bild på gamalt hur i Croatsien"></a>
+                
+                <a href="#"><img class="pic" src="Bilder/Kantareller.jpg" alt="En korg med Kantareller"></a>
             </div>  
         </div>
 
-        
+        <!-- Footer -->
         <div class="footer">
             <a href="https://sv-se.facebook.com/" target="_blank">
                 <i class="fa-brands fa-square-facebook fa-2xl" style="color: #087aeb;"></i>
@@ -89,7 +99,6 @@
                 <i class="fa-brands fa-instagram fa-2xl" style="color: #fd491c;"></i>
             </a>
         </div>
-
     </div>
 </body>
 </html>

@@ -1,8 +1,7 @@
 
-@media screen and (min-width:960px){
+@media screen and (max-width:960px){
     .container{
-        display: grid;
-        grid-template-rows: 10% 15% 50% 30%;
+        grid-template-rows: 8% 8% 50% 30%;
         grid-template-areas: 
           ". header header" 
           ". h1 h1"
@@ -14,10 +13,10 @@
 
 }
  
-@media screen and (max-width:959px){
+@media screen and (max-width:957px){
+    /* Informations-sidan */
     .container{
-        display: grid;
-        grid-template-rows: 10% 10% 43% 45%;
+        grid-template-rows: 7% 7% 43% 45%;
         grid-template-areas: 
           ". header header" 
           ". h1 h1"
@@ -29,21 +28,19 @@
 
     /* Kontakt-sidan */
     .K-container{
-        grid-template-rows: 15vh 70vh 5vh ;
-        grid-template-areas:
-            ". header header"
-            ". h1 h1"
-            ". main main"
-            "footer footer .";
-            align-items: center;
-        }
+    grid-template-areas:
+        ". header header"
+        ". h1 h1"
+        ". main main"
+        "footer footer .";
+        align-items: center;
+    }
 
     .K-left{
         grid-column: 2/4;
         grid-row: 2/2
         
     }
-
 
     .K-main{
         grid-column: 4/6;
@@ -53,12 +50,12 @@
 
 }
 
-@media screen and (max-width:761px){
+@media screen and (max-width:775px){
   
     /* Menyn */
-  .menu-icon {
-    display: block;
-    font-size: 3rem;        
+    .menu-icon {
+        display: block;
+        font-size: 3rem;        
     }
 
     .header {
@@ -81,16 +78,16 @@
         list-style: none;
     }
 
+    /* Information-sidan */
     .container{
-        display: grid;
-        grid-template-rows: 7% 10% 27% 27% 38% 5%;
-        grid-template-areas: 
-          ". header header" 
-          ". h1 h1"
-          ". main right"
-          ". under-div under-div"
-          "footer footer . ";
-          align-items: center;
+    grid-template-rows: 7% 7% 27% 27% 38% 5%;
+    grid-template-areas: 
+        ". header header" 
+        ". h1 h1"
+        ". main right"
+        ". under-div under-div"
+        "footer footer . ";
+        align-items: center;
     }  
 
     .main{
@@ -106,18 +103,19 @@
         grid-row: 5/5
    }
 
-  
-   
+   /* Återsäller hover effkt som finns på stor skärm */
+   .pic:hover {
+    transform: scale(1);
+}
     /* Kontakt-sidan */
     .K-container{
-        display: grid;
-        grid-template-rows: 15vh 10vh 70vh;
-        grid-template-areas:
-            ". header header"
-            ". main main"
-            "footer footer .";
-            align-items: center;
-        }
+    grid-template-rows: 15vh 10vh 70vh;
+    grid-template-areas:
+        ". header header"
+        ". main main"
+        "footer footer .";
+        align-items: center;
+    }
 
    .K-main{
         grid-column: 2/6;
@@ -137,36 +135,32 @@
 
     /* Nyhets-sidan */
     .N-container{
-        display: grid;
-        grid-template-rows: 5% 500% 400%;
-        grid-template-areas:
-            ". header header"
-            "footer footer .";
-            align-items: center;
-            
-      }
+    grid-template-rows: 5% 500% 400%;
+    grid-template-areas:
+        ". header header"
+        "footer footer .";
+        align-items: center;
+    }
 
 }
 
-
 @media screen and (max-width:597px){
+    /* Information-sidan */
     .container{
-        display: grid;
-        grid-template-rows: 8% 10% 25% 27% 40% 5%;
-        grid-template-areas: 
-          ". header header" 
-          ". h1 h1"
-          ". main right"
-          ". under-div under-div"
-          "footer footer . ";
-          align-items: center;
+    grid-template-rows: 8% 8% 25% 27% 40% 5%;
+    grid-template-areas: 
+        ". header header" 
+        ". h1 h1"
+        ". main right"
+        ". under-div under-div"
+        "footer footer . ";
+        align-items: center;
     }  
 
     .h1{
         grid-area: header;
         grid-row: 2/2;
         grid-column: 2/6;
-       
     }
 
     .main{
@@ -183,36 +177,37 @@
         grid-column: 2/6;
    }
 
+   /* Kontakt-sidan */
    .K-container{
     grid-template-rows: 10% 15% 65% 5% ;
     grid-template-areas:
-     ". header header"
-     ". h1 h1"
-     ". main main"
-     "footer footer .";
-     align-items: center;
- }
-   
-
+        ". header header"
+        ". h1 h1"
+        ". main main"
+        "footer footer .";
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:502px){
+    /* Information-sidan */
     .container{
-        display: grid;
-        grid-template-rows: 5% 10% 22% 22% 50% 5%;
-        grid-template-areas: 
-          ". header header" 
-          ". h1 h1"
-          ". main right"
-          ". under-div under-div"
-          "footer footer . ";
-          align-items: center;
+    grid-template-rows: 5% 10% 22% 22% 50% 5%;
+    grid-template-areas: 
+        ". header header" 
+        ". h1 h1"
+        ". main right"
+        ". under-div under-div"
+        "footer footer . ";
+        align-items: center;
     }  
 
+    h1{
+        grid-column: 2/6;
+    }
 
     /* Kontakt-sidan */
     .K-container{
-    display: grid;
     grid-template-rows:10% 15% 70% 5% ;
     grid-template-areas:
         ". header header"
@@ -239,23 +234,22 @@
 }
 
 @media screen and (max-width:452px){
+    /* Informations-sidan */
     .container{
-        display: grid;
-        grid-template-rows: 7% 10% 25% 25% 40% 5%;
-        grid-template-areas: 
-          ". header header" 
-          ". h1 h1"
-          ". main right"
-          ". under-div under-div"
-          "footer footer . ";
-          align-items: center;
+    grid-template-rows: 7% 10% 25% 25% 40% 5%;
+    grid-template-areas: 
+        ". header header" 
+        ". h1 h1"
+        ". main right"
+        ". under-div under-div"
+        "footer footer . ";
+        align-items: center;
     }  
 
     .h1{
         grid-area: header;
         grid-row: 2/2;
         grid-column: 1/7;
-       
     }
 
     .main{
@@ -271,44 +265,44 @@
         grid-row: 5/5;
         grid-column: 1/7;
    }
-
-  
 }
 
 @media screen and (max-width:404px){
+    /* Informatin-sidan */
     .container{
-        display: grid; 
-        grid-template-rows: 5% 10% 24% 20% 50% 5%;
-        grid-template-areas: 
-          ". header header" 
-          ". h1 h1"
-          ". main right"
-          ". under-div under-div"
-          "footer footer . ";
-          align-items: center;
+    grid-template-rows: 5% 10% 24% 20% 50% 5%;
+    grid-template-areas: 
+        ". header header" 
+        ". h1 h1"
+        ". main right"
+        ". under-div under-div"
+        "footer footer . ";
+        align-items: center;
     } 
 
+    h1{
+        grid-column: 1/7;
+    }
+
+    /* Kontakt-sida */
     .K-left{
         grid-column: 2/6;
-       
-        
     }
 
 }
 
 @media screen and (max-width:320px){
+    /* Information-sida */
     .container{
-        display: grid;
-        grid-template-rows: 5% 10% 25% 23% 45% 5%;
-        grid-template-areas: 
-          ". header header" 
-          ". h1 h1"
-          ". main right"
-          ". under-div under-div"
-          "footer footer . ";
-          align-items: center;
+    grid-template-rows: 5% 10% 25% 23% 45% 5%;
+    grid-template-areas: 
+        ". header header" 
+        ". h1 h1"
+        ". main right"
+        ". under-div under-div"
+        "footer footer . ";
+        align-items: center;
     } 
-
 
 }
 

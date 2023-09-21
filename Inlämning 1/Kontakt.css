@@ -1,13 +1,13 @@
 /* Css av Kontakt-sidan */
 .K-container{
-    display: grid;
-    grid-template-columns: 10% 10% 30% 30% 10% 10%; 
-    grid-template-rows: 15% 80% 5%;
-    grid-template-areas:
-        ". header header"
-        ". left main"
-        "footer footer .";  
-        align-items: center;  
+display: grid;
+grid-template-columns: 10% 10% 30% 30% 10% 10%; 
+grid-template-rows: 15% 80% 5%;
+grid-template-areas:
+    ". header header"
+    ". left main"
+    "footer footer .";  
+    align-items: center;  
 }
 
 .K-left{
@@ -29,6 +29,11 @@
     height: 25vh;
     align-items: center;
     padding-left: 5vh;
+}
+
+#kontakt{
+    background-color:rgba(190, 190, 190, 0.801);
+    border: solid black 1px;
 }
 
 .K-main{
