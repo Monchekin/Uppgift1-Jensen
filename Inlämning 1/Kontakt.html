@@ -33,10 +33,13 @@
             </ul>
         </nav>
 
-        <!-- Bild -->
+        <!-- Paragraf + Bild -->
         <div id="K-left">
             <p id="citat">It is all about you</p>
-            <img id="pointer" src="Bilder/it-s-all-about-you.jpg" alt="">
+            
+            <div id="BP">
+                <img id="pointer" src="Bilder/it-s-all-about-you.jpg" alt="En hand som pekar till höger">
+            </div>
         </div>
 
         <!-- Formulär -->
@@ -54,22 +57,20 @@
                     <input type="text" name="Efternamn" maxlength="15" placeholder="Ditt efternamn" required/> <br>
 
                     <label>E-post: <span>*</span></label> <br>
-                    <input pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" type="text"  name="epost" 
+                    <input pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" type="text" name="epost" 
                     placeholder="namn@adress.com" required /> <br>
 
                     <label>Födelsedag:<span>*</span></label><br>
                     <input type="date" name="Födelsedag"  required><br>
                 
-                    <label for="Identitet">Jag identifierar mig som:</label><br>
-                    <select id="Identitet" name="Identitet">
+                    <label>Jag identifierar mig som:</label><br>
+                    <select id="identitet" name="Identitet">
                         <option value="Kvinna">Kvinna</option>
                         <option value="Man">Man</option>
                         <option value="Hen">Hen</option>
                         <option value="Annat">Annat</option>
                     </select>
                             
-                    <br><br>
-
                     <!--Sänd-knappen som både kan spara och skicka formuläret-->
                     <input  type="submit" id="button1" value="Skicka"/> 
 
