@@ -1,0 +1,224 @@
+/* Valde att ha en extern fil för Media-queries för att det ska vara lättare att hitta både i den samt om man vill ha orginalfilen bredvid för att se skillnader */
+
+/* Valde att göra fler brytpunkter för att alla divar skulle ligga rätt hela tiden beroende vilken skärm man har. */
+ 
+@media screen and (max-width:957px){
+    /* Kontakt-sidan */
+    #K-left{
+        grid-column: 2/4;
+        grid-row: 2/2
+    }
+
+    #K-main{
+        grid-column: 4/6;
+        grid-row: 2/2 ;
+    }
+}
+
+@media screen and (max-width:775px){
+    /* Menyn */
+    #menu-icon {
+        display: block;
+        font-size: 3rem;        
+    }
+
+    .header {
+        flex-direction: column;
+        position: absolute;
+        top: 2vh;
+        width: 50%; 
+    }
+
+    #meny {
+        display: none;
+        background-color: black;
+        grid-row: 1/1;
+    }
+
+    input[type="checkbox"]:checked + #menu-icon + #meny {
+        display:grid;
+    }
+
+    li a{
+        color: white;
+    }
+
+    li a:hover{
+        transform: none;
+    } 
+
+    .meny-link{
+        font-size: 15px;
+        list-style: none;
+    }
+
+    /* Information-sidan */
+    .container{
+        grid-template-rows: 7% 7% 26% 25% 38% 5%;
+    }  
+
+    h1{
+        grid-row: 2/2;
+    }
+
+    #main{
+        grid-column: 3/5;
+        margin-bottom: 15px; 
+    }
+
+   #right{
+        grid-row: 4/4;
+        grid-column: 3/5;
+        margin-top: 15px;
+    }
+
+    #under-div{
+        grid-row: 5/5;
+        margin-top: 10px;
+    }    
+
+   /* Återsäller hover effkt som finns på stor skärm */
+   .pic:hover {
+    transform: scale(1);
+    }
+    
+    /* Kontakt-sidan */
+    #K-container{
+        grid-template-rows: 15vh 10vh 70vh;
+    }
+
+    #K-main{
+        grid-column: 2/6;
+        grid-row: 3/3 ;
+    }
+  
+    #pointer{
+        display: none;
+    }
+    
+    #K-left{
+        grid-column: 2/6;
+        grid-row: 2/2
+    }
+
+    /* Nyhets-sidan */
+    #N-container{
+        grid-template-rows: 5% 500% 400%;
+    }
+
+}
+
+@media screen and (max-width:597px){
+    /* Information-sidan */
+    .container{
+        grid-template-rows: 7% 8% 25% 25% 45%;
+    }  
+
+    #mig
+    {
+        grid-area: header;
+        grid-row: 2/2;
+        grid-column: 2/6;
+    }
+
+    #main{
+        grid-column: 2/6;
+    }
+
+    #right{
+        grid-row: 4/4;
+        grid-column: 2/6;
+    }
+
+    #under-div{
+        grid-row: 5/5;
+        grid-column: 2/6;
+    }
+
+   /* Kontakt-sidan */
+   #K-container{
+        grid-template-rows: 10% 15% 65% 5% ;
+    }
+}
+
+@media screen and (max-width:502px){
+    /* Information-sidan */
+    .container{
+        grid-template-rows: 6% 7% 24% 22% 50% 5%;
+    }  
+
+    h1{
+        grid-column: 2/6;
+    }
+
+    /* Kontakt-sidan */
+    #K-container{
+        grid-template-rows:10% 15% 70% 5% ;
+    }
+    
+    #K-left{
+        grid-column: 3/5;
+        grid-row: 2/2;
+    }
+
+    #K-main{
+        grid-column: 3/5;
+    }
+}
+
+@media screen and (max-width:452px){
+    /* Informations-sidan */
+    .container{
+        grid-template-rows: 6% 9% 25% 25% 40% 5%;
+    }  
+
+    #mig{
+        grid-area: header;
+        grid-row: 2/2;
+        grid-column: 1/7;
+    }
+
+    #main{
+        grid-column: 1/7;
+    }
+
+    #right{
+        grid-row: 4/4;
+        grid-column: 1/7;
+    }
+
+    #under-div{
+        grid-row: 5/5;
+        grid-column: 1/7;
+   }
+}
+
+@media screen and (max-width:404px){
+    /* Informatin-sidan */
+    .container{
+        grid-template-rows: 5% 7% 23% 22% 50% 5%;
+    } 
+
+    h1{
+        grid-column: 1/7;
+    }
+
+    /* Kontakt-sida */
+    #K-left{
+        grid-column: 2/6;
+    }
+}
+
+@media screen and (max-width:320px){
+    /* Information-sida */
+    .container{
+        grid-template-rows: 5% 5% 25% 23% 45% 5%;
+    } 
+
+    #mig{
+        font-size: 25px;
+    }
+}
+
+
+

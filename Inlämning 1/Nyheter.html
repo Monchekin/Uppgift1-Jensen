@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-   <!--  Valde att style:a här för att det är den enda sidan med anna bakgrundsbila -->
+   <!--  Valde att style:a här för att det är den enda sidan med annan bakgrundsbild -->
     <style>
-        .news {
+        #news {
         background-image: url(Bilder/News.png);
         background-size: contain;
         }
@@ -14,23 +14,24 @@
 
     <script src="https://kit.fontawesome.com/A3EFB24E9B.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="Ö.css">
-    <link rel="stylesheet" href="Nyheter.css">
-    <link rel="stylesheet" href="fuckupside.css">
+    <link rel="stylesheet" href="CSS-filen.css">
+    <link rel="stylesheet" href="Media-queries.css">
 
     <link rel="icon" href="Bilder/Lina.png" type="image/vnd.microsoft.icon"/>
 
     <title>Nyheter</title>
 </head>
-<body class="news">
-    <div class="N-container">
+
+<!-- Valt att ha Id på de divar som bara används en gång och class på de som behöver användas flera gånger -->
+<body id="news">
+    <div id="N-container">
         <nav class="header"> 
             <!-- Hamburgar-meny för små enheter-->
             <input type="checkbox" id="menu">
-            <label for="menu" class="menu-icon">&#9776;</label>
+            <label for="menu" id="menu-icon">&#9776;</label>
             
-             <!-- Meny för stora enheter -->
-            <ul class="meny">
+            <!-- Meny för stora enheter -->
+            <ul id="meny">
                 <li class="meny-link"><a href="index.html">Hem</a></li>
                 <li class="meny-link"><a href="Infosida.html">Information</a></li>
                 <li class="meny-link"><a href="Kontakt.html">Kontakt</a></li>
@@ -39,6 +40,7 @@
         </nav>        
 
         <!-- Footer -->
+        <!-- Här valde jag class footer eftersom index sidan har id på sin footer och den är lite annorlund från det andra footerna -->
         <div class="footer">
             <a href="https://sv-se.facebook.com/" target="_blank">
                 <i class="fa-brands fa-square-facebook fa-2xl" style="color: #087aeb;"></i>
